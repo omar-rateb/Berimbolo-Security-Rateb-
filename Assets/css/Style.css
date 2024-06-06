@@ -1,0 +1,252 @@
+* {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Scrollbar */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #5a49e2 #f5f5f5;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5a49e2;
+  border-radius: 9px;
+  border: 3px dotted #7b0f0f;
+}
+
+/* Navbar Section */
+.navbar {
+  background-color: #f5f5f5 !important;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+#navLinks a {
+  transition: 0.5s ease-in;
+  font-size: 18px;
+}
+#navLinks .active {
+  transition: 0.5s ease-in;
+  color: #00717b !important;
+}
+
+.search_button {
+  transition: 0.5s ease-in;
+}
+.search_button:hover {
+  transition: 0.2s ease-in;
+  background-color: #5a49e2 !important;
+}
+
+.search_form:focus {
+  box-shadow: 0 0 0 0.25rem #5b49e278;
+}
+
+@media (max-width: 1024px) {
+  .navbar-brand {
+    margin: 0 !important;
+    font-size: 15px;
+  }
+}
+/* End of Navbar Section */
+
+/* Hero Section */
+.hero_section {
+  background: url('../Images/important/main\ photo2.jpeg'),rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: hue;
+  height: 100vh;
+}
+.animated {
+  width: 690px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero_section .col:nth-child(2) {
+    display: none;
+  }
+}
+
+/* End of Hero Section */
+
+/* About Section */
+.about_section {
+  background-color: #aeaba6;
+}
+
+.about_img {
+  width: 80vh;
+  height: 50vh;
+}
+
+@media (max-width: 320px) {
+  .about_section {
+    padding-top: 10px !important;
+    padding-bottom: 30px !important;
+  }
+  .about_section h1 {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 767px) {
+  .about_section .col:nth-child(1) {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .about_img {
+    width: 40vh;
+    height: 30vh;
+  } 
+}
+@media (max-width: 1439px) {
+  .about_img {
+    width: 40vh;
+    height: 30vh;
+  } 
+}
+
+/* End of About Section */
+
+/* Services Section */
+
+.services_section .card {
+  height: 70vh;
+}
+
+.services_section img {
+  width: 100% !important;
+  height: 30vh !important;
+}
+
+
+/* End of Services Section */
+
+/* Products Section */
+
+.products_section .card {
+  height: 40vh;
+}
+.products_section .card .card-title {
+  font-size: 30px;
+}
+@media (max-width: 450px) {
+  .products_section .card {
+    height: 60vh ;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 768px) {
+  .products_section .card {
+    height: 50vh;
+  }
+  .products_section .card .card-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1439px) {
+  .products_section .card {
+    height: 50vh;
+  }
+  .products_section .card .card-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .products_section .card {
+    height: 40vh;
+  }
+  .products_section .card .card-title {
+    font-size: 23px;
+  }
+}
+
+
+
+/* End of Products Section */
+
+/* Contact Section */
+
+.contact {
+  background-color: #5a49e2;
+}
+.contact-form {
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+}
+.contact-form .form-control {
+  border-radius: 1rem;
+}
+.contact-image {
+  text-align: center;
+}
+.contact-image img {
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+.contact-form form {
+  padding: 14%;
+}
+.contact-form form .row {
+  margin-bottom: -7%;
+}
+.contact-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
+
+/* End of Contact Section */
